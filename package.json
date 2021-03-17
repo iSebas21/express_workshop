@@ -1,20 +1,30 @@
 {
   "name": "express",
   "version": "1.0.0",
-  "description": "An API REST using express js",
+  "description": "A project for a Node.JS workshop",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iSebas21/express_workshop.git"
+  },
   "keywords": [
-    "api",
-    "rest",
+    "node",
+    "mysql",
     "express",
     "nodejs"
   ],
   "author": "Sebastian Manzo",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iSebas21/express_workshop/issues"
+  },
+  "homepage": "https://github.com/iSebas21/express_workshop#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
   }
 }
