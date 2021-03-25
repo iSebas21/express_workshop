@@ -1,5 +1,5 @@
-const mysql = require('mysql')
-const util = require('util')
+const mysql = require('mysql');
+const util = require('util');
 
 const pool = mysql.createPool({
     connectionLimit: 10,
@@ -7,8 +7,8 @@ const pool = mysql.createPool({
     user: 'root',
     password: '',
     database: 'pokemon'
-})
+});
 
-pool.query = util.promisify(pool.query)
+pool.query = util.promisify(pool.query);
 
-module.exports = pool
+module.exports = pool;
