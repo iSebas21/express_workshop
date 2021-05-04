@@ -4,7 +4,7 @@ function init() {
     if(!localStorage.getItem("token"))
     {
         document.querySelector('.btn-secondary').addEventListener('click', function () {
-            window.location.href = "signin.html"
+            window.location.href = "login.html"
         })
     
         document.querySelector('.btn-primary').addEventListener('click', login);
