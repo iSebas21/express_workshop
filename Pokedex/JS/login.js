@@ -1,16 +1,14 @@
 window.onload = init;
 
 function init() {
-    if(!localStorage.getItem("token"))
-    {
+    if(!localStorage.getItem("token")) {
         document.querySelector('.btn-secondary').addEventListener('click', function () {
             window.location.href = "login.html"
         })
     
         document.querySelector('.btn-primary').addEventListener('click', login);
     }
-    else 
-    {
+    else {
         window.location.href = "pokedex.html";
     }    
 }

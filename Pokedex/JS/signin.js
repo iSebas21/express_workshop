@@ -1,18 +1,14 @@
 window.onload = init;
 
 function init() {
-
-    if(!localStorage.getItem("token"))
-    {
+    if(!localStorage.getItem("token")) {
         document.querySelector('.btn-secondary').addEventListener('click', function () {
             window.location.href = "signin.html"
         })
 
         document.querySelector('.btn-primary').addEventListener('click', signin);
-
     }
-    else 
-    {
+    else {
         window.location.href = "pokedex.html";
     }  
 }
@@ -31,7 +27,6 @@ function signin() {
             user_password: pass
         }
     }).then(function (res) {
-        
         console.log(res);
         alert("Registro Exitoso");
         window.location.href = "login.html"
