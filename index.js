@@ -16,7 +16,10 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', index);
+app.get('/', (rq, res, next) =>{
+    res.status(200);
+    res.send("Hola Mundo");
+});
 app.use('/user',user);
 app.use(auth);
 app.use('/pokemon', pokemon);
