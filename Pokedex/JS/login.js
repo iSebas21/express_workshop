@@ -3,7 +3,7 @@ window.onload = init;
 function init() {
     if(!localStorage.getItem("token")) {
         document.querySelector('.btn-secondary').addEventListener('click', function () {
-            window.location.href = "login.html"
+            window.location.href = "signin.html"
         })
     
         document.querySelector('.btn-primary').addEventListener('click', login);
